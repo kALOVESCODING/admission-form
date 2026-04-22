@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV Jain Admission Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card-grid">
+      <aside class="visual-panel">
+        <div class="visual-copy">
+          <p class="eyebrow">Admissions 2026</p>
+          <h1>Admission form, rebuilt with a cleaner and calmer experience.</h1>
+          <p class="intro">
+            The form keeps the same core details and upload flow, presented in a more focused,
+            minimal layout that feels lighter on desktop and mobile.
+          </p>
+        </div>
+
+        <figure class="visual-frame">
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80"
+            alt="Admission visual"
+          >
+        </figure>
+
+        <div class="visual-note">
+          <span class="status-dot"></span>
+          <p>Replace the image source above with the existing AV Jain admission image asset to keep the exact original image.</p>
+        </div>
+      </aside>
+
+      <section class="form-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Online Application</p>
+            <h2>Admission Form</h2>
+            <p class="panel-text">Fill in every section carefully. Required fields, upload checks, and review flow are all kept intact.</p>
+          </div>
+
+          <div class="stepper" aria-label="Form progress">
+            <div class="step is-active" data-step-indicator="1">
+              <span>1</span>
+              <small>Student</small>
+            </div>
+            <div class="step" data-step-indicator="2">
+              <span>2</span>
+              <small>Payment</small>
+            </div>
+            <div class="step" data-step-indicator="3">
+              <span>3</span>
+              <small>Review</small>
+            </div>
+          </div>
+        </div>
+
+        <form id="admissionForm" class="admission-form" novalidate>
+          <section class="form-step is-active" data-step="1">
+            <div class="section-title">
+              <h3>Student details</h3>
+              <p>Basic student and family information.</p>
+            </div>
+
+            <div class="input-grid">
+              <label class="field">
+                <span>Full Name <em>*</em></span>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter student's full name" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Course / Year <em>*</em></span>
+                <input type="text" id="courseYear" name="courseYear" placeholder="Example: B.Com / 1st Year" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Father Name <em>*</em></span>
+                <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Mother Name <em>*</em></span>
+                <input type="text" id="motherName" name="motherName" placeholder="Enter mother's name" required>
+                <small class="error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="2">
+            <div class="section-title">
+              <h3>Payment details</h3>
+              <p>Banking and transaction information with receipt upload.</p>
+            </div>
+
+            <div class="input-grid">
+              <label class="field">
+                <span>Bank Account Name <em>*</em></span>
+                <input type="text" id="bankAccountName" name="bankAccountName" placeholder="Name on the bank account" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Transaction Number / Reference ID <em>*</em></span>
+                <input type="text" id="transactionId" name="transactionId" placeholder="Enter transaction or reference ID" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Date of Payment <em>*</em></span>
+                <input type="date" id="paymentDate" name="paymentDate" required>
+                <small class="error"></small>
+              </label>
+
+              <label class="field file-field">
+                <span>Upload Screenshot / Picture of the Bank Receipt <em>*</em></span>
+                <input type="file" id="receipt" name="receipt" accept=".jpg,.jpeg,.png,.pdf" required>
+                <div class="file-drop">
+                  <strong>Choose a receipt file</strong>
+                  <p>Accepted: JPG, PNG, PDF up to 2 MB</p>
+                  <span id="fileName">No file selected</span>
+                </div>
+                <small class="error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="3">
+            <div class="section-title">
+              <h3>Review and submit</h3>
+              <p>Check your details before sending the form.</p>
+            </div>
+
+            <div class="review-card" id="reviewCard"></div>
+          </section>
+
+          <div class="form-footer">
+            <button type="button" class="ghost-btn" id="prevBtn" hidden>Back</button>
+            <div class="footer-actions">
+              <button type="button" class="ghost-btn" id="saveBtn">Save draft</button>
+              <button type="button" class="primary-btn" id="nextBtn">Continue</button>
+              <button type="submit" class="primary-btn" id="submitBtn" hidden>Submit form</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
