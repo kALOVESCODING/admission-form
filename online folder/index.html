@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azorte Online</title>
+  <meta name="description" content="Azorte Online is a trend-forward fashion destination with a clean 2026 redesign, built with HTML, CSS, and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand">AZORTE</a>
+
+    <nav class="nav" id="siteNav">
+      <a href="#new">New In</a>
+      <a href="#drops">Drops</a>
+      <a href="#edit">The Edit</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search">Search</button>
+      <button class="icon-btn" aria-label="Wishlist">Save</button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">2026 Trend Reset</p>
+        <h1>Quiet luxury, Gen Z energy, and a softer digital storefront.</h1>
+        <p class="hero-text">
+          A fresh Azorte Online concept built to feel editorial, minimal, and magnetic at first sight.
+          Clean blocks, immersive imagery, and a shopping mood that feels instantly current.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#new" class="primary-btn">Shop the latest</a>
+          <a href="#edit" class="secondary-btn">Explore the edit</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li>Same-day dispatch</li>
+          <li>Curated trend drops</li>
+          <li>Member-only previews</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <article class="floating-card card-tall">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Fashion portrait in minimalist styling">
+          <div class="floating-copy">
+            <span>01 / New Mood</span>
+            <strong>Minimal silhouettes</strong>
+          </div>
+        </article>
+
+        <article class="floating-card card-wide">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Model wearing monochrome fashion pieces">
+          <div class="floating-copy">
+            <span>02 / Fresh Drop</span>
+            <strong>Monochrome motion</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-bar section" data-reveal>
+      <div>
+        <strong>120+</strong>
+        <span>Weekly arrivals</span>
+      </div>
+      <div>
+        <strong>4.9/5</strong>
+        <span>Community rating</span>
+      </div>
+      <div>
+        <strong>18K</strong>
+        <span>Wishlist saves today</span>
+      </div>
+    </section>
+
+    <section class="section products" id="new">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">New In</p>
+        <div class="section-title-wrap">
+          <h2>Pieces that feel elevated without trying too hard.</h2>
+          <p>A restrained palette, bold textures, and shapes designed for an instantly save-worthy feed.</p>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-reveal>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Neutral outerwear fashion look">
+          </figure>
+          <div class="product-info">
+            <span class="tag">Trending</span>
+            <h3>Structured Layer Set</h3>
+            <p>Refined tailoring with an oversized line and a gallery-clean finish.</p>
+            <div class="product-meta">
+              <strong>Rs. 3,490</strong>
+              <button class="ghost-pill">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Modern fashion portrait with soft tones">
+          </figure>
+          <div class="product-info">
+            <span class="tag">Editor Pick</span>
+            <h3>Soft Form Dress</h3>
+            <p>Fluid shape, clean neckline, and an easy luxury mood for all-day wear.</p>
+            <div class="product-meta">
+              <strong>Rs. 2,980</strong>
+              <button class="ghost-pill">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Street-style fashion look in a clean modern setting">
+          </figure>
+          <div class="product-info">
+            <span class="tag">Hot Right Now</span>
+            <h3>Street Minimal Co-ord</h3>
+            <p>A sharper take on everyday cool with soft contrast and easy layering.</p>
+            <div class="product-meta">
+              <strong>Rs. 3,260</strong>
+              <button class="ghost-pill">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section spotlight" id="drops">
+      <div class="spotlight-media" data-reveal>
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80" alt="Minimal fashion styling with luxe textures">
+      </div>
+      <div class="spotlight-copy" data-reveal>
+        <p class="eyebrow">Limited Drop</p>
+        <h2>Built for the scroll stop.</h2>
+        <p>
+          This redesign leans into 2026 trend language: cleaner surfaces, layered cards,
+          restrained color, stronger typography, and image-led storytelling that still feels premium.
+        </p>
+        <div class="spotlight-points">
+          <span>Minimal visual system</span>
+          <span>Gen Z editorial vibe</span>
+          <span>Responsive and polished</span>
+        </div>
+        <a href="#journal" class="primary-btn">See the style journal</a>
+      </div>
+    </section>
+
+    <section class="section edit" id="edit">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">The Edit</p>
+        <div class="section-title-wrap">
+          <h2>Switch the vibe with one tap.</h2>
+          <p>Use the mood toggle to shift the surface tint while keeping the same minimal design language.</p>
+        </div>
+      </div>
+
+      <div class="theme-panel" data-reveal>
+        <div class="theme-buttons">
+          <button class="theme-chip is-active" data-theme="pearl">Pearl</button>
+          <button class="theme-chip" data-theme="sand">Sand</button>
+          <button class="theme-chip" data-theme="night">Night</button>
+        </div>
+
+        <div class="theme-preview">
+          <article>
+            <span>Visual tone</span>
+            <strong id="themeName">Pearl Current</strong>
+          </article>
+          <p id="themeText">
+            Bright, airy, and gallery-like with soft metallic contrast for a clean premium first impression.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journal" id="journal">
+      <div class="journal-card feature" data-reveal>
+        <p class="eyebrow">Style Journal</p>
+        <h2>Future retail should feel lighter, smarter, and more alive.</h2>
+        <p>
+          Instead of overloading the page, this concept creates focus with fewer elements,
+          stronger hierarchy, and imagery that carries the emotion.
+        </p>
+      </div>
+
+      <div class="journal-card subscribe" data-reveal>
+        <span class="mini-label">Members club</span>
+        <h3>Join for first access to trend drops.</h3>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" id="emailInput" placeholder="Enter your email" aria-label="Email address">
+          <button type="submit" class="primary-btn">Join now</button>
+        </form>
+        <p class="form-note" id="formNote">Early access, curated alerts, and softer spam energy.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
